@@ -16,18 +16,20 @@
         <h2>ค้นหาสินค้า</h2>
         <div class="search-container">
             <input type="text" id="searchBox" placeholder="พิมพ์ชื่อสินค้า...">
-            <button id="btnSearch">ค้นหา</button>
-            <button id="btnClear" type="button">ล้างคำค้นหา</button>
+            <div class="button-group">
+                <button id="btnSearch">ค้นหา</button>
+                <button id="btnClear" type="button">ล้างคำค้นหา</button>
+            </div>
         </div>
         <table id="productTable">
             <thead>
                 <tr>
                     <th>ภาพ</th>
-                    <th>รหัส</th>
+                    <th class="num">รหัส</th>
                     <th>ชื่อสินค้า</th>
                     <th>ประเภท</th>
-                    <th>ราคา</th>
-                    <th>คงเหลือ</th>
+                    <th class="num">ราคา</th>
+                    <th class="num">คงเหลือ</th>
                 </tr>
             </thead>
             <tbody> <!-- แสดงผลลัพธ์ตรงนี้ --> </tbody>

@@ -18,10 +18,10 @@ function loadProducts(keyword = "") {
                     let row = `
             <tr>
               <td><img src="https://web.bisx.app/image_product/${item.pro_image}"></td>
-              <td>${item.pro_id}</td>
+              <td class="num">${item.pro_id}</td>
               <td>${item.pro_name}</td>
               <td>${item.protype_name}</td>
-              <td>${item.pro_price}</td>
+              <td class="num">${item.pro_price}</td>
               <td>${item.pro_num}</td>
             </tr>
           `;
