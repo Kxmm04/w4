@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="images" href="images/logo.png">
+    <title>ค้นหาสินค้า</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>ค้นหาสินค้า</h2>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="พิมพ์ชื่อสินค้า...">
+            <button id="btnSearch">ค้นหา</button>
+            <button id="btnClear" type="button">ล้างคำค้นหา</button>
+        </div>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>ภาพ</th>
+                    <th>รหัส</th>
+                    <th>ชื่อสินค้า</th>
+                    <th>ประเภท</th>
+                    <th>ราคา</th>
+                    <th>คงเหลือ</th>
+                </tr>
+            </thead>
+            <tbody> <!-- แสดงผลลัพธ์ตรงนี้ --> </tbody>
+        </table>
+        <div id="productCount"></div>
+    </div>
+</body>
+
+</html>
