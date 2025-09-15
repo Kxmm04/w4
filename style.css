@@ -20,12 +20,6 @@ h2 {
   text-align: left;
 }
 
-input {
-  padding: 6px;
-  margin-right: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
 
 button {
   padding: 10px 22px;
@@ -47,22 +41,28 @@ table {
   border-collapse: separate;
   border-spacing: 0;
   margin-top: 0;
-  background: #fff;
+  background: #ffffff;
   box-shadow: none;
   border-radius: 12px;
   overflow: hidden;
+  border-collapse: collapse;
 }
 
-th,
-td {
+th {
   border: none;
   padding: 13px 10px;
   text-align: left;
   font-size: 16px;
+   border-bottom: 2px solid #eee;
+   background-color: #e0e0e0;
 }
 
-tr:not(:last-child) td {
+td {
+  border: none;
+  padding: 12px 10px;
+  font-size: 14px;
   border-bottom: 1px solid #eee;
+  
 }
 
 td img {
@@ -129,12 +129,10 @@ td img {
 
   #searchBox {
     width: 100%;         /* ยาวเต็มบรรทัด */
-    flex: 1 1 0;
     font-size: 16px;
     padding: 10px 12px;
     border-radius: 14px;
     box-sizing: border-box;
-    min-width: 0; /* สำคัญมากสำหรับ flex ให้ยืดสุด */
   }
 
   .button-group {
@@ -146,11 +144,10 @@ td img {
 
   .button-group button {
     flex: 1;             /* ปุ่มแบ่งพื้นที่เท่ากัน */
-    font-size: 16px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 5px ;
     border-radius: 14px;
     box-sizing: border-box;
-    width: auto;         /* ไม่บังคับเต็มบรรทัด */
   }
 
   table {
