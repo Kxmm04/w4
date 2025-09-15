@@ -45,7 +45,6 @@ table {
   box-shadow: none;
   border-radius: 12px;
   overflow: hidden;
-  border-collapse: collapse;
 }
 
 th {
@@ -53,8 +52,8 @@ th {
   padding: 13px 10px;
   text-align: left;
   font-size: 16px;
-   border-bottom: 2px solid #eee;
-   background-color: #e0e0e0;
+  border-bottom: 2px solid #eee;
+  background-color: #e0e0e0;
 }
 
 td {
@@ -62,7 +61,6 @@ td {
   padding: 12px 10px;
   font-size: 14px;
   border-bottom: 1px solid #eee;
-  
 }
 
 td img {
@@ -121,14 +119,16 @@ td img {
 
   .search-container {
     display: flex;
-    flex-direction: column; /* เรียงลงแทนที่จะเรียงข้าง */
+    flex-direction: column;
+    /* เรียงลงแทนที่จะเรียงข้าง */
     gap: 8px;
     margin-bottom: 12px;
     align-items: stretch;
   }
 
   #searchBox {
-    width: 100%;         /* ยาวเต็มบรรทัด */
+    width: 100%;
+    /* ยาวเต็มบรรทัด */
     font-size: 16px;
     padding: 10px 12px;
     border-radius: 14px;
@@ -143,9 +143,10 @@ td img {
   }
 
   .button-group button {
-    flex: 1;             /* ปุ่มแบ่งพื้นที่เท่ากัน */
+    flex: 1;
+    /* ปุ่มแบ่งพื้นที่เท่ากัน */
     font-size: 15px;
-    padding: 5px ;
+    padding: 5px;
     border-radius: 14px;
     box-sizing: border-box;
   }
@@ -179,7 +180,8 @@ td img {
   }
 
   /* ตัวเลข (id, ราคา, จำนวน) ไม่ตัดบรรทัด */
-  td.num, th.num {
+  td.num,
+  th.num {
     white-space: nowrap;
     text-align: center;
   }
@@ -190,4 +192,3 @@ td img {
     word-break: break-word;
   }
 }
-
